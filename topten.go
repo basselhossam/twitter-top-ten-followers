@@ -60,7 +60,7 @@ func topTen(dataInput string) []int {
 	    log.Fatal(err)
 	}
 
-	defer file.Close() // What does this line do?
+	defer file.Close()
 	scanner := bufio.NewScanner(file)
 	data := make(map[int]int)
 	for scanner.Scan() {
